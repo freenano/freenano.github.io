@@ -1,0 +1,29 @@
+// breakpoints
+$b-xsmall: 480px;
+$b-small: 768px;
+$b-medium: 1024px;
+$b-large: 1280px;
+
+%cta-primary-large {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0;
+  border: 0;
+  background-color: var(--c-primary);
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+%site-gradient {
+  background-image: linear-gradient(
+      to right top,
+      var(--c-gradient01),
+      var(--c-gradient02),
+      var(--c-gradient03),
+      var(--c-gradient04),
+      var(--c-gradient05),
+      var(--c-gradient06)
+  );
+  color: white;
+}

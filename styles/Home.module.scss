@@ -1,0 +1,85 @@
+@import "atomic";
+
+.header {
+  @extend %site-gradient;
+  padding: 6rem 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1, h2 {
+    margin: 0 auto 2rem;
+    max-width: 625px;
+  }
+
+  h2 {
+    font-weight: normal;
+  }
+
+  h1 svg {
+    width: 2rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
+}
+
+.button {
+  @extend %cta-primary-large;
+
+  svg {
+    width: 1rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1024px;
+
+  h2 {
+    font-weight: normal;
+    margin: 0 auto 2rem;
+    max-width: 625px;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+.featureList {
+  margin: 0 0 3rem;
+  padding: 3rem 0;
+  list-style: none;
+  border-bottom: 1px solid var(--c-neutral);
+
+  @media screen and (min-width: $b-small) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &:last-child {
+    border: 0;
+  }
+
+  li {
+    padding: 0 1rem;
+    flex: 1 1 33.33%;
+    text-align: center;
+
+    svg {
+      width: 5rem;
+      max-height: 5rem;
+      color: var(--c-secondary);
+    }
+  }
+}
+
+.footer {
+  @extend %site-gradient;
+  padding: 6rem 1rem;
+  text-align: center;
+
+  a {
+    text-decoration: underline;
+  }
+}
